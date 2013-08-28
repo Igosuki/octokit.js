@@ -979,6 +979,11 @@ makeOctokit = (_, jQuery, base64encode, userAgent) =>
           @getIssueEvents = () ->
             _request 'GET', "#{@repoPath}/issues/events", null
 
+          # List Open Issues for a Repository
+          # --------
+          @getIssues = () ->
+            _request 'GET', "#{@repoPath}/issues", null
+            
           # List events for a network of Repositories
           # -------
           @getNetworkEvents = () ->

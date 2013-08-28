@@ -838,6 +838,9 @@
             this.getIssueEvents = function() {
               return _request('GET', "" + this.repoPath + "/issues/events", null);
             };
+            this.getIssues = function() {
+              return _request('GET', "" + this.repoPath + "/issues", null);
+            };
             this.getNetworkEvents = function() {
               return _request('GET', "/networks/" + _owner + "/" + _repo + "/events", null);
             };
